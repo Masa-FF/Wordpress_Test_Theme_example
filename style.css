@@ -2,3 +2,10 @@
 /*
 Theme Name: Sample_Test_Theme
 */
+
+header {
+text-align: center;
+height: 300px;
+width: 100%;
+background-color: aqua;
+}
