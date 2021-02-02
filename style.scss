@@ -3,9 +3,21 @@ header {
   height: 200px;
   text-align: center;
   background-color: azure;
-
   h1{
-    color: red;
+    font-size: 50px;
+    padding-top: 35px;
+  }
+  nav {
+    list-style: none;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    li{
+      text-align: center;
+      margin: 0 30px 0;
+      font-size: 25px;
+    }
   }
 }
 

@@ -15,8 +15,8 @@
   <header>
     <h1>ポートレートアルバム</h1>
     <nav>
-      <li><a href"">top</a></li>
-      <li><a href"">about</a></li>
-      <li><a href"">link</a></li>
+      <li><a href"">Top</a></li>
+      <li><a href"">About</a></li>
+      <li><a href"">Link</a></li>
     </nav>
   </header>
