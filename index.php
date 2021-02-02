@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test_Wordpress_example</title>
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . 'style.css'); ?>" type="text/css" />
-</head>
+  <?php get_header(); ?>
 
-<header>
-  <h1>My Photo Album</h1>
-</header>
+  <main>
+    <?php the_post(); ?>
+    <a href="post.html">
+      <?php the_title(); ?>
+    </a>
+    <p>投稿時刻 : <?php the_time("Y-m-d"); ?></p>
+    <?php the_content(); ?>
+  </main>
 
-<body>
-
-</body>
-
-<footer>
-</footer>
-
-</html>
+  <?php get_footer(); ?>
