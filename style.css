@@ -1,32 +1,25 @@
+@charset "UTF-8"
+
+/*
+Theme Name:hoge
+Version: 1.0
+ */
+
 header {
   width: 100%;
-  height: 200px;
+  height: 250px;
   text-align: center;
-  background-color: azure;
+  background-color: blueviolet;
 }
 
-header h1 {
-  font-size: 50px;
-  padding-top: 35px;
+aside {
+  background-color: coral;
 }
 
-header nav {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px;
+main {
+  background-color: blue;
 }
 
-header nav li {
-  text-align: center;
-  margin: 0 30px 0;
-  font-size: 25px;
+footer {
+  background-color: bisque;
 }
-/*# sourceMappingURL=style.css.map */
