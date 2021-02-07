@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoge</title>
+  <title>Portrait Photographs</title>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <?php wp_head(); ?>
@@ -13,9 +13,13 @@
 
 <body <?php body_class(); ?>>
   <header>
+    <div id="hamburger">
+      <span></span>
+    </div>
     <h1>Portrait Photographs</h1>
-    <nav>
-      <li><a href"">Top</a></li>
+    <nav class="pc-nav">
+      <li><a href"">Photos</a></li>
+      <li><a href"">Blogs</a></li>
       <li><a href"">About</a></li>
       <li><a href"">Link</a></li>
     </nav>
