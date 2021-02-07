@@ -1,3 +1,8 @@
-# Wordpress_Test_Theme_example
-1 Wordpressの構造を理解し、同時にPHPの知識を身につけることを目的とする。
-2 SCSSの記述に慣れる
+# 自身のWebページ作成
+## スクールで学んだ知識をアウトプットすると共に、Javascriptの知識を身につける
+
+取り入れる技術
+- HTML
+- CSS(SCSSの書き方にも慣れる)
+- Javascript
+- PHP
