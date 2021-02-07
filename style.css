@@ -72,6 +72,10 @@ header h1 {
     height: 2px;
     background-color:black;
  }
+
+ .container aside {
+   display: none;
+ }
 }
 
 .container {
