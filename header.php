@@ -18,34 +18,36 @@
     </div>
     <h1>Portrait Photographs</h1>
     <nav class="pc-nav">
-      <li><a href"">Photos</a></li>
+      <li><a href"">Gallery</a></li>
       <li><a href"">Blogs</a></li>
       <li><a href"">About</a></li>
+      <li><a href"">Profile</a></li>
       <li><a href"">Link</a></li>
     </nav>
 
     <nav class="sp-nav">
       <ul>
-        <li><a href="#">Photos</a></li>
+        <li><a href="#">Gallery</a></li>
         <li><a href="#">Blogs</a></li>
         <li><a href="#">About</a></li>
+        <li><a href="#">Profile</a></li>
         <li><a href="#">Link</a></li>
         <li class="close"><span>Close</span></li>
       </ul>
     </nav>
 
-<!-- jQueryの読み込み -->
-<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- jQueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
-<!-- スマホナビの表示・非表示 -->
-<script>
-$(function() {
-   const hum = $('#hamburger, .close')
-   const nav = $('.sp-nav')
-   hum.on('click', function(){
-      nav.toggleClass('toggle');
-   });
-});
-</script>
+    <!-- スマホナビの表示・非表示 -->
+    <script>
+      $(function() {
+        const hum = $('#hamburger, .close')
+        const nav = $('.sp-nav')
+        hum.on('click', function() {
+          nav.toggleClass('toggle');
+        });
+      });
+    </script>
 
   </header>
