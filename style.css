@@ -1,6 +1,6 @@
 /*
 Theme Name:Test_Wordpress_theme
-Description: hogehoge
+Description: 写真アルバム
 Version: 1.0
 Author: Masa
  */
@@ -16,6 +16,7 @@ header h1 {
   padding-top: 50px;
   margin-bottom: 50px;
   font-size: 50px;
+  font-family: 'Courgette', cursive;
 }
 
 .pc-nav {
@@ -27,6 +28,7 @@ header h1 {
 .pc-nav li {
   margin: 0 50px 0;
   font-size: 26px;
+  font-family: 'Courgette', cursive;
 }
 
 .sp-nav {
@@ -159,9 +161,10 @@ main {
   margin: 60px auto 0;
 }
 
-main h3 {
+main p {
   text-align: center;
   margin: 60px 0 60px;
+  font-family: 'Courgette', cursive;
 }
 
 #photos-index {

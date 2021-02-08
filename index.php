@@ -6,7 +6,7 @@
     <img src="<?php bloginfo('template_directory'); ?>/img/index-top-image1.jpg">
   </div>
 
-  <h3>Gallery</h3>
+  <p>Gallery</p>
 
   <div id="photos-index">
     <?php while(have_posts()) : the_post(); ?>
