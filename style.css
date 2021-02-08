@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
 Theme Name:Test_Wordpress_theme
 Description: 写真アルバム
@@ -19,6 +21,11 @@ header h1 {
   font-family: 'Great Vibes', cursive;
 }
 
+header h1 a {
+  text-decoration: none;
+  color: black;
+}
+
 .pc-nav {
   display: flex;
   list-style: none;
@@ -30,6 +37,11 @@ header h1 {
   margin: 0 55px 0;
   font-size: 26px;
   font-family: 'Courgette', cursive;
+}
+
+.pc-nav li a {
+  text-decoration: none;
+  color: black;
 }
 
 .sp-nav {
@@ -158,18 +170,21 @@ header h1 {
 
 main {
   width: 70%;
-  height: auto;
+  /* height: auto; */
+  height: 2500px;
   /* background-color: rgb(228, 194, 122); */
   margin: 0 auto 0;
 }
 
-main p {
+main h6 {
   text-align: center;
-  margin: 60px 0 60px;
+  margin: 0 0 60px;
+  padding-top: 60px;
   font-family: 'Courgette', cursive;
+  font-size: 20px;
 }
 
-#photos-index {
+.photos-index {
   display: flex;
 }
 
