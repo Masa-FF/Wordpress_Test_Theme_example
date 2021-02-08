@@ -15,8 +15,8 @@ header {
 header h1 {
   padding-top: 50px;
   margin-bottom: 50px;
-  font-size: 50px;
-  font-family: 'Courgette', cursive;
+  font-size: 58px;
+  font-family: 'Great Vibes', cursive;
 }
 
 .pc-nav {
@@ -26,7 +26,7 @@ header h1 {
 }
 
 .pc-nav li {
-  margin: 0 50px 0;
+  margin: 0 55px 0;
   font-size: 26px;
   font-family: 'Courgette', cursive;
 }

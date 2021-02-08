@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <?php wp_head(); ?>
   <!-- WordPressで必要なファイルを設定するために必要な記述。headの最下段に記述する -->
@@ -22,11 +22,11 @@
     </div>
     <h1>Portrait Photographs</h1>
     <nav class="pc-nav">
-      <li><a href"">Gallery</a></li>
-      <li><a href"">Blogs</a></li>
-      <li><a href"">About</a></li>
-      <li><a href"">Profile</a></li>
-      <li><a href"">Link</a></li>
+      <li><a href"#">Gallery</a></li>
+      <li><a href"#">Blogs</a></li>
+      <li><a href"#">About</a></li>
+      <li><a href"#">Profile</a></li>
+      <li><a href"#">Link</a></li>
     </nav>
 
     <nav class="sp-nav">
