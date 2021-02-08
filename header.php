@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portrait Photographs</title>
-  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="all"/>
+  <!-- スタイルシートの読み込みコード -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-
+  <!-- リセットCSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap">
+  <!-- Google fontの追加コード -->
   <?php wp_head(); ?>
   <!-- WordPressで必要なファイルを設定するために必要な記述。headの最下段に記述する -->
 </head>
@@ -20,13 +21,13 @@
     <div id="hamburger">
       <span></span>
     </div>
-    <h1><a href="<?php echo esc_url( home_url( "/home/" ) ); ?>">Portrait Photographs</a></h1>
+    <h1><a href="<?php echo esc_url(home_url("/home/")); ?>">Portrait Photographs</a></h1>
     <nav class="pc-nav">
-      <li><a href="<?php echo esc_url( home_url( "/home/" ) ); ?>#photos">Gallery</a></li>
-      <li><a href="<?php echo esc_url( home_url( "/blogs/" ) ); ?>">Blogs</a></li>
-      <li><a href="<?php echo esc_url( home_url( "/about/" ) ); ?>">About</a></li>
-      <li><a href="<?php echo esc_url( home_url( "/profile/" ) ); ?>">PROFILE</a></li>
-      <li><a href="<?php echo esc_url( home_url( "/link/" ) ); ?>">Link</a></li>
+      <li><a href="<?php echo esc_url(home_url("/home/")); ?>#photos">Gallery</a></li>
+      <li><a href="<?php echo esc_url(home_url("/blogs/")); ?>">Blogs</a></li>
+      <li><a href="<?php echo esc_url(home_url("/about/")); ?>">About</a></li>
+      <li><a href="<?php echo esc_url(home_url("/profile/")); ?>">PROFILE</a></li>
+      <li><a href="<?php echo esc_url(home_url("/link/")); ?>">Link</a></li>
     </nav>
 
     <nav class="sp-nav">
