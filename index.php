@@ -8,12 +8,11 @@
   </div>
   <div id="photos">
     <h6>Gallery</h6>
-    <div class="photos-index">
-      <?php while(have_posts()) : the_post(); ?>
-        <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-        <p><?php the_content(); ?></p>
-      <?php endwhile; ?>
-    </div>
+    <ul class="photos-index">
+    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+        <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></li>
+      <?php endwhile; endif; ?>
+    </ul>
   </div>
 </main>
 

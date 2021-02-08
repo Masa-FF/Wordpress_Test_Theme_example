@@ -172,7 +172,7 @@ main {
   width: 70%;
   /* height: auto; */
   height: 2500px;
-  /* background-color: rgb(228, 194, 122); */
+  background-color: rgb(228, 194, 122);
   margin: 0 auto 0;
 }
 
@@ -182,6 +182,14 @@ main h6 {
   padding-top: 60px;
   font-family: 'Courgette', cursive;
   font-size: 20px;
+}
+
+#photos ul {
+  list-style: none;
+}
+
+#photos ul li {
+  margin: 0 auto 0;
 }
 
 .photos-index {
@@ -195,3 +203,10 @@ main h6 {
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
+footer {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding-top: 90px;
+  background-color: blanchedalmond;
+}
