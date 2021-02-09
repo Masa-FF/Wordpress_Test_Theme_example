@@ -188,20 +188,38 @@ main h6 {
 #photos ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* background-color: burlywood; */
+}
+
+#photos ul::after {
+  display: block;
+  content:"";
+  width: 670px;
+  }
+
+@media screen and (min-width: 1920px) {
+  #photos ul {
+    width: 78%;
+    margin: 0 auto 0;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  #photos ul {
+    width: 65%;
+    margin: 0 auto 0;
+  }
 }
 
 #photos ul li {
-  height: auto;
-  width: auto;
 }
 
 #photos ul li img {
   vertical-align: bottom;
-}
-
-.photos-container {
-  background-color: blue;
+  margin: 5px 5px 5px;
+  width: 325px;
 }
 
 .wrapper{
