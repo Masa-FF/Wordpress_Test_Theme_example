@@ -7,13 +7,15 @@
   </div>
   <div id="photos">
     <h6>Gallery</h6>
-    <ul class="photos-index">
-    <?php if(have_posts()): while(have_posts()): the_post(); ?>
-        <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></li>
-      <?php endwhile; endif; ?>
-    </ul>
+    <div class="photos-container">
+      <?php $category = get_the_category(); ?>
+      <ul photos-index>
+        <?php if(have_posts()): while(have_posts()): the_post(); ?>
+          <li><a href ="<?php the_permalink(); ?>"><img src ="<?php echo get_the_post_thumbnail_url(); ?>"></a></li>
+        <?php endwhile; endif; ?>
+      </ul>
+    </div>
   </div>
 </main>
 
 <?php get_footer(); ?>
-<!-- フッターを呼び出す関数 -->
