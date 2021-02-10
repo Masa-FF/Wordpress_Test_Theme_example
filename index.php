@@ -10,8 +10,19 @@
     <?php $category = get_the_category(); ?>
     <ul photos-index>
       <?php if(have_posts()): while(have_posts()): the_post(); ?>
-        <li><a href ="<?php the_permalink(); ?>"><img src ="<?php echo get_the_post_thumbnail_url(); ?>"></a></li>
-      <?php endwhile; endif; ?>
+        <li>
+          <a href ="<?php the_permalink(); ?>">
+            <img src ="<?php echo get_the_post_thumbnail_url(); ?>">
+
+            <div class="mask">
+              <div class="caption">
+                <?php the_title(); ?>
+              </div>
+            </div>
+
+          </a>
+        </li>
+        <?php endwhile; endif; ?>
     </ul>
   </div>
 </main>
