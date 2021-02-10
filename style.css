@@ -182,15 +182,15 @@ main {
 
 @media screen and (min-width: 2560px) {
 main {
-  width: 60%;
- }
+   width: 60%;
+  }
 }
 
 @media screen and (min-width: 3840px) {
   main {
     width: 45%;
-   }
   }
+}
 
 main h6 {
   text-align: center;
@@ -224,12 +224,15 @@ main h6 {
 }
 
 .tile-button .caption {
-	font-size: 1.3rem;
 	color:	#fff;
+  display: inline-block;
+  text-align: left;
+  margin: auto;
 }
 
 .tile-button .caption p {
-  margin-bottom: 3px;
+  margin: 3px 0 3px;
+  font-size: 1.2vw;
 }
 
 .tile-button .mask {
@@ -243,6 +246,8 @@ main h6 {
 	-webkit-transition:	all 0.2s ease;
 	transition:		all 0.2s ease;
   padding: 2px;
+  /* text-align: center; */
+  display: flex;  
 }
 
 .tile-button:hover .mask {

@@ -16,6 +16,7 @@
       autoplay: true,
       arrows: false,
       fade: true,
+      autoplaySpeed: 5500,
       });
     });
   </script>
@@ -33,7 +34,7 @@
             <div class="mask">
               <div class="caption">
                 <p><i class="fas fa-calendar-alt"></i> <?php echo get_post_meta($post->ID, '撮影日', true); ?></p>
-                <p><i class="fas fa-camera"></i> <?php echo get_post_meta($post->ID, '撮影会', true); ?></p>
+                <p><i class="fa fa-map-marker"></i> <?php echo get_post_meta($post->ID, '撮影地', true); ?></p>
                 <p><i class="fa fa-user"></i> <?php echo get_post_meta($post->ID, 'モデル', true); ?></p>
               </div>
             </div>
