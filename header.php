@@ -13,6 +13,9 @@
   <!-- Google fontの追加コード -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- FontAwesome -->
+
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick.css"
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick-theme.css"
   <?php wp_head(); ?>
   <!-- WordPressで必要なファイルを設定するために必要な記述。headの最下段に記述する -->
 </head>
