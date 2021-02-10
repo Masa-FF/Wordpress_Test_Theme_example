@@ -14,7 +14,8 @@
     $('.scroll-image').slick({
       dots: true,
       autoplay: true,
-      arrows: true,
+      arrows: false,
+      fade: true,
       });
     });
   </script>

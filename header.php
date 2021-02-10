@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/CSS/style.css" type="text/css" media="all"/>
   <!-- スタイルシートの読み込みコード -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <!-- リセットCSS -->
@@ -13,9 +12,11 @@
   <!-- Google fontの追加コード -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- FontAwesome -->
+  
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick-theme.css">
 
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick.css"
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick-theme.css"
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="all"/>
   <?php wp_head(); ?>
   <!-- WordPressで必要なファイルを設定するために必要な記述。headの最下段に記述する -->
 </head>
