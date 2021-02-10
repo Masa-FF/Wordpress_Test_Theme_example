@@ -11,12 +11,14 @@
     <ul photos-index>
       <?php if(have_posts()): while(have_posts()): the_post(); ?>
         <li>
-          <a href ="<?php the_permalink(); ?>">
+          <a href ="<?php the_permalink(); ?>" class="tile-button">
             <img src ="<?php echo get_the_post_thumbnail_url(); ?>">
 
             <div class="mask">
               <div class="caption">
-                <?php the_title(); ?>
+                <p><i class="fas fa-calendar-alt"></i> <?php echo get_post_meta($post->ID, '撮影日', true); ?></p>
+                <p><i class="fas fa-camera"></i> <?php echo get_post_meta($post->ID, '撮影会', true); ?></p>
+                <p><i class="fa fa-user"></i> <?php the_title(); ?></p>
               </div>
             </div>
 
