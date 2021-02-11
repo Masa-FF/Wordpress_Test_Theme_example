@@ -233,6 +233,7 @@ main h6 {
 .tile-button .caption p {
   margin: 3px 0 3px;
   font-size: 1.2vw;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .tile-button .mask {
