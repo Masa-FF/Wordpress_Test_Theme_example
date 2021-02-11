@@ -63,7 +63,7 @@ header h1 a {
     display: block;
     width: 30px;
     height: 25px;
-    margin: 0 0 0 auto;
+    margin: 20px 20px 0 auto;
  }
 
   #hamburger span {
@@ -94,7 +94,7 @@ header h1 a {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 70%;
+    width: 80%;
     height: 2px;
     background-color:black;
  }
@@ -110,6 +110,8 @@ header h1 a {
    width: 100%;
    background: rgba(0, 0, 0, .8);
    transition: all .2s ease-in-out;
+   opacity: 0;
+   transform: translateY(-100%);
  }
 
  .sp-nav ul {
@@ -119,13 +121,16 @@ header h1 a {
    justify-content: center;
    align-items: center;
    height: 100%;
- }
- .sp-nav li {
-   margin: 0;
-   padding: 0;
+  }
+  
+  .sp-nav li {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
  }
  .sp-nav li span {
-   font-size: 15px;
+   font-size: 5px;
    color: #fff;
  }
  .sp-nav li a, .sp-nav li span {
@@ -160,7 +165,16 @@ header h1 a {
    height: 1px;
    background: #fff;
    transform: rotate( -45deg );
+  }
+  .toggle {
+    transform: translateY( 0 );
+    opacity: 1;
  }
+  #photos h6 {
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+
 }
 
 .scroll-image {
