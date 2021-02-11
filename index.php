@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <!-- headerを呼び出す関数 -->
-
 <main>
   <ul class="scroll-image">
     <li><img src="<?php echo esc_url( get_theme_file_uri( "img/index-top-image1.jpg" ) ); ?>" alt="ロゴ"></li>
@@ -20,7 +19,6 @@
       });
     });
   </script>
-
   <div id="photos">
     <h6>Gallery</h6>
     <?php $category = get_the_category(); ?>
@@ -41,9 +39,11 @@
             </div>
           </a>
         </li>
-        <?php endwhile; endif; ?>
+        <?php endwhile; ?>
+        <?php else: ?>
+          <p class="no-item">申し訳ありません。まだ、投稿が無いようです。</p>
+        <?php endif; ?>
     </ul>
   </div>
 </main>
-
 <?php get_footer(); ?>

@@ -321,3 +321,38 @@ footer p {
   margin: 0 auto 0;
   text-align: center;
 }
+
+/* ここからblogのスタイルシート */
+
+.blog-main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.blog-item {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog-img {
+  width: 40%;
+  height: auto;
+  background-color: blue;
+  padding: 0;
+}
+
+.blog-title {
+  background-color: blueviolet;
+}
+
+.blog-time {
+  background-color: cornflowerblue;
+}
+
+.no-item {
+  text-align: center;
+  color: rgb(230, 181, 69);
+  font-size: 1.2rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
