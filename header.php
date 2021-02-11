@@ -18,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick-theme.css">
   <!-- Slicer -->
-  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
   <script>
     $(function() {
       const hum = $('#hamburger, .close')
@@ -29,7 +29,7 @@
     });
   </script>
   <!-- ハンバーガーメニューアニメーション -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="all"/>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="all" />
   <?php wp_head(); ?>
   <!-- WordPressで必要なファイルを設定するために必要な記述。headの最下段に記述する -->
 </head>
@@ -42,7 +42,7 @@
     <h1><a href="<?php echo esc_url(home_url("//")); ?>">Portrait Photographs</a></h1>
     <nav class="pc-nav">
       <li><a href="<?php echo esc_url(home_url("//")); ?>#photos">Gallery</a></li>
-      <li><a href="<?php echo esc_url(home_url("/bloglist/")); ?>">Blogs</a></li>
+      <li><a href="<?php echo esc_url(home_url("/blog/")); ?>">Blogs</a></li>
       <li><a href="<?php echo esc_url(home_url("/about/")); ?>">About</a></li>
       <li><a href="<?php echo esc_url(home_url("/profile/")); ?>">PROFILE</a></li>
       <li><a href="<?php echo esc_url(home_url("/link/")); ?>">Link</a></li>
@@ -50,7 +50,7 @@
     <nav class="sp-nav">
       <ul>
         <li><a href="<?php echo esc_url(home_url("//")); ?>#photos"">Gallery</a></li>
-        <li><a href="<?php echo esc_url(home_url("/bloglist/")); ?>">Blogs</a></li>
+        <li><a href=" <?php echo esc_url(home_url("/blog/")); ?>">Blogs</a></li>
         <li><a href="<?php echo esc_url(home_url("/about/")); ?>">About</a></li>
         <li><a href="<?php echo esc_url(home_url("/profile/")); ?>">Profile</a></li>
         <li><a href="<?php echo esc_url(home_url("/link/")); ?>">Link</a></li>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<!-- headerを呼び出す関数 -->
+
 <main>
   <ul class="scroll-image">
     <li><img src="<?php echo esc_url( get_theme_file_uri( "img/index-top-image1.jpg" ) ); ?>" alt="ロゴ"></li>
