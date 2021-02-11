@@ -42,7 +42,7 @@
     <h1><a href="<?php echo esc_url(home_url("//")); ?>">Portrait Photographs</a></h1>
     <nav class="pc-nav">
       <li><a href="<?php echo esc_url(home_url("//")); ?>#photos">Gallery</a></li>
-      <li><a href="<?php echo esc_url(home_url("/blogs/")); ?>">Blogs</a></li>
+      <li><a href="<?php echo esc_url(home_url("/bloglist/")); ?>">Blogs</a></li>
       <li><a href="<?php echo esc_url(home_url("/about/")); ?>">About</a></li>
       <li><a href="<?php echo esc_url(home_url("/profile/")); ?>">PROFILE</a></li>
       <li><a href="<?php echo esc_url(home_url("/link/")); ?>">Link</a></li>
@@ -50,7 +50,7 @@
     <nav class="sp-nav">
       <ul>
         <li><a href="<?php echo esc_url(home_url("//")); ?>#photos"">Gallery</a></li>
-        <li><a href="<?php echo esc_url(home_url("/blogs/")); ?>">Blogs</a></li>
+        <li><a href="<?php echo esc_url(home_url("/bloglist/")); ?>">Blogs</a></li>
         <li><a href="<?php echo esc_url(home_url("/about/")); ?>">About</a></li>
         <li><a href="<?php echo esc_url(home_url("/profile/")); ?>">Profile</a></li>
         <li><a href="<?php echo esc_url(home_url("/link/")); ?>">Link</a></li>

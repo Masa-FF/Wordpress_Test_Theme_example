@@ -184,7 +184,6 @@ header h1 a {
     padding-top: 30px;
     margin-bottom: 40px;
   }
-
 }
 
 .scroll-image {
@@ -282,12 +281,16 @@ main h6 {
 
 @media screen and (max-width: 640px) {
   main {
-    width: 95%;
+    width: 97%;
   }
 
   #photos ul li {
     width: 50%; /* 幅 */
     padding-bottom: 50%; /* 幅と同じ高さをつくる */
+  }
+
+  .tile-button .caption p {
+    font-size: 2.6vw;
   }
 }
 
