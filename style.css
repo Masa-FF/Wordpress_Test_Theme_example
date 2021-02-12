@@ -356,3 +356,30 @@ footer p {
   font-size: 1.2rem;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+/* ここからsingle.phpのスタイルシート */
+.single-page-data {
+  margin: 30px 0 50px;
+}
+
+.single-page-data a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.blog-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.meta-data {
+  text-align: right;
+  font-family: 'Courgette', cursive, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 100px;
+}
+
+.meta-data span {
+  color: red;
+}
