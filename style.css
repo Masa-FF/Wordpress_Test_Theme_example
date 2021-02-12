@@ -313,7 +313,7 @@ footer {
   height: 200px;
   margin-top: auto;
   padding-top: 90px;
-  background-color: blanchedalmond;
+  background-color: rgb(246, 246, 246);
 }
 
 footer p {
@@ -367,19 +367,34 @@ footer p {
   color: black;
 }
 
+.single-page-section h4 {
+  margin: 30px auto 0;
+}
 
-.blog-photo img {
+.single-page-section ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.sns-area {
+  display: flex;
+}
+
+.sns-area-left {
+  width: 20%;
+}
+
+.sns-area-left img {
   width: 100%;
-  height: auto;
+
 }
 
-.meta-data {
-  text-align: right;
-  font-family: 'Courgette', cursive, sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 100px;
+.sns-area-right {
+  width: 80%;
 }
 
-.meta-data span {
-  color: red;
+.sns-area-right img {
+  width: 10%;
+  padding-top: 10%;
+  padding-left: 5%;
 }
