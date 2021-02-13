@@ -1,24 +1,13 @@
 <?php get_header(); ?>
 
 <main>
-  <ul class="scroll-image">
-    <li><img src="<?php echo esc_url( get_theme_file_uri( "img/index-top-image1.jpg" ) ); ?>" alt="ロゴ"></li>
-    <li><img src="<?php echo esc_url( get_theme_file_uri( "img/index-top-image2.jpg" ) ); ?>" alt="ロゴ"></li>
-    <li><img src="<?php echo esc_url( get_theme_file_uri( "img/index-top-image3.jpg" ) ); ?>" alt="ロゴ"></li>
-  </ul>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/slick.js"></script>
-  <script>
-    $(document).ready(function(){
-    $('.scroll-image').slick({
-      dots: true,
-      autoplay: true,
-      arrows: false,
-      fade: true,
-      autoplaySpeed: 5500,
-      });
-    });
-  </script>
+<div class="top-img">
+  <?php echo do_shortcode('[smartslider3 slider="4"]');?>
+</div>
+<div class="top-image-mobile">
+  <?php echo do_shortcode('[smartslider3 slider="5"]');?>
+</div>
+
   <div id="photos">
     <h6>Gallery</h6>
     <?php $category = get_the_category(); ?>

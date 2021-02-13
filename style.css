@@ -22,7 +22,7 @@ header h1 {
 
 header h1 a {
   text-decoration: none;
-  color: black;
+  color: rgb(82, 82, 82);
 }
 
 .pc-nav {
@@ -35,13 +35,13 @@ header h1 a {
 
 .pc-nav li {
   margin: 0 auto 0;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-family: 'Courgette', cursive, sans-serif;
 }
 
 .pc-nav li a {
   text-decoration: none;
-  color: black;
+  color: rgb(82, 82, 82);
   margin: 0 15px 0;
 }
 
@@ -186,17 +186,6 @@ header h1 a {
   }
 }
 
-.scroll-image {
-  list-style: none;
-  display: block;
-}
-
-.scroll-image img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto 0;
-}
-
 main {
   width: 70%;
   height: auto;
@@ -215,12 +204,24 @@ main {
   }
 }
 
+@media screen and (max-width: 640px) {
+.top-img {
+  display: none;
+  }
+}
+@media screen and (min-width: 640px) {
+.top-image-mobile {
+  display: none;
+ }
+}
+
 main h6 {
   text-align: center;
   margin: 0 0 60px;
   padding-top: 60px;
   font-family: 'Courgette', cursive, sans-serif;
   font-size: 20px;
+  color: rgb(82, 82, 82);
 }
 
 #photos ul {
@@ -318,6 +319,7 @@ footer {
 
 footer p {
   font-size: 1.0rem;
+  font-family: 'Courgette', cursive, sans-serif;
   margin: 0 auto 0;
   text-align: center;
 }
