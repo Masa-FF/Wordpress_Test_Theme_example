@@ -14,9 +14,6 @@
   <!-- Google font (M PLUS Rounded 1c) -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- FontAwesome -->
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/CSS/slick-theme.css">
-  <!-- Slicer -->
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
   <script>
     $(function() {

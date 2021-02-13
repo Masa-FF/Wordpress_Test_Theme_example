@@ -100,7 +100,7 @@ header h1 a {
  }
 
  .sp-nav {
-   z-index: 1;
+   z-index: 2;
    position: fixed;
    top: 0;
    left: 0;
@@ -300,6 +300,7 @@ main h6 {
   position: relative;/*←相対位置*/
   padding-bottom: 120px;/*←footerの高さ*/
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+  z-index: 3;
 }
 
 body {
@@ -369,34 +370,28 @@ footer p {
   color: black;
 }
 
-.single-page-section h4 {
-  margin: 30px auto 0;
+.single-page-section {
+  display: grid;
+  /* grid-gap: 0.3rem; */
+  background-color: blanchedalmond;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  justify-content: flex-start;
 }
 
-.single-page-section ul li {
-  text-decoration: none;
+.single-page-section li a span {
+  grid-row: span 2;
+}
+
+
+.single-page-section li {
   list-style: none;
 }
 
-.sns-area {
-  display: flex;
-}
-
-.sns-area-left {
-  width: 20%;
-}
-
-.sns-area-left img {
+.single-page-section li a img {
   width: 100%;
-
 }
 
-.sns-area-right {
-  width: 80%;
-}
-
-.sns-area-right img {
-  width: 10%;
-  padding-top: 10%;
-  padding-left: 5%;
+.photo-z-index  {
+  z-index: 1;
 }
