@@ -1,21 +1,28 @@
 <?php get_header(); ?>
 
 <main>
-<div class="top-img">
-  <?php echo do_shortcode('[smartslider3 slider="4"]');?>
-</div>
-<div class="top-image-mobile">
-  <?php echo do_shortcode('[smartslider3 slider="5"]');?>
-</div>
-
+  <?php if ( $paged < 2 ) { ?>
+    <div class="top-img">
+      <?php echo do_shortcode('[smartslider3 slider="4"]');?>
+    </div>
+  <?php } else { ?>
+  <?php } ?>
+  <div class="top-image-mobile">
+    <?php echo do_shortcode('[smartslider3 slider="5"]');?>
+  </div>
   <div id="photos">
     <h6>Gallery</h6>
     <?php $category = get_the_category(); ?>
     <ul photos-index>
-      <?php query_posts('posts_per_page=12'); ?>
-      <!-- 最大読み込み12件に制限 -->
-      <?php query_posts("cat=3"); ?>
-      <?php if(have_posts()): while(have_posts()): the_post(); ?>
+      <?php
+      $paged = get_query_var('paged', 1); // ページ送り用記述
+      $args = array(
+          'post_type' => 'スラッグ', 
+          'posts_per_page' => 9,
+          'paged' => $paged // ページ送り用記述
+      );
+      $wp_query = new WP_Query($args);
+      if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(3); ?>
         <li>
           <a href ="<?php the_permalink(); ?>" class="tile-button">
             <img src ="<?php echo get_the_post_thumbnail_url(); ?>">
@@ -28,11 +35,24 @@
             </div>
           </a>
         </li>
-        <?php endwhile; ?>
-        <?php else: ?>
+      <?php endwhile; ?>
+      <?php else: ?>
           <p class="no-item">申し訳ありません。まだ、投稿が無いようです。</p>
-        <?php endif; ?>
+      <?php endif; wp_reset_postdata(); ?>
     </ul>
+    <div class="pagination">
+      <?php
+          $big = 9999999999;
+          $arg = array(
+              'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link ( $big ) ) ),
+          'format' => 'page/%#%/',
+          'current' => max(1, $paged),
+              'prev_text' => '<i class="fa fa-angle-left"></i>',
+              'next_text' => '<i class="fa fa-angle-right"></i>'
+          );
+          echo paginate_links($arg);
+      ?>
+    </div>
   </div>
 </main>
 <?php get_footer(); ?>

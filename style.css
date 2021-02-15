@@ -395,3 +395,50 @@ footer p {
 .photo-z-index  {
   z-index: 1;
 }
+
+
+
+.pagination {
+  margin: 60px auto 90px;
+  padding: 10px 0;
+  text-align: center
+}
+
+.pagination a {
+  font-size: 9pt;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  transition: .3s
+}
+
+.pagination a:hover {
+  color: #FFF;
+  background: #323232;
+}
+
+.pagination span {
+  font-size: 9pt;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #f3f3f3
+}
+
+.pagination span.dots {
+  background: 0
+}
+
+.pagination span.current {
+  background: #323232;
+  color: #fff
+}
