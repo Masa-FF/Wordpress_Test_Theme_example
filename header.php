@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートレートを主体に撮影した記憶のアルバム">
+  <meta name="viewport" content="width=device-width">
   <!-- スタイルシートの読み込みコード -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <!-- リセットCSS -->
@@ -35,7 +37,7 @@
     <div id="hamburger">
       <span></span>
     </div>
-    <h1><a href="<?php echo esc_url(home_url("//")); ?>">Portrait Photographs</a></h1>
+    <h1><a href="<?php echo esc_url(home_url("//")); ?>">Sakura Photography</a></h1>
     <nav class="pc-nav">
       <li><a href="<?php echo esc_url(home_url("//")); ?>#photos">Gallery</a></li>
       <li><a href="<?php echo esc_url(home_url("/blog/")); ?>">Blogs</a></li>
