@@ -12,12 +12,12 @@
   <?php } ?>
   <div id="photos">
     <h6>Gallery</h6>
-    <?php $category = get_the_category(); ?>
+    <?php /*$category = get_the_category();*/ ?>
     <ul photos-index>
       <?php
       $paged = get_query_var('paged', 1); // ページ送り用記述
       $args = array(
-          'category'  => '3',
+          'category_name' => 'photo',
           'post_type' => 'post',
           'posts_per_page' => 6,
           'paged' => $paged // ページ送り用記述
