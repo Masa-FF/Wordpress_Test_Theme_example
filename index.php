@@ -5,11 +5,11 @@
     <div class="top-img">
       <?php echo do_shortcode('[smartslider3 slider="4"]');?>
     </div>
+    <div class="top-image-mobile">
+      <?php echo do_shortcode('[smartslider3 slider="5"]');?>
+    </div>
   <?php } else { ?>
   <?php } ?>
-  <div class="top-image-mobile">
-    <?php echo do_shortcode('[smartslider3 slider="5"]');?>
-  </div>
   <div id="photos">
     <h6>Gallery</h6>
     <?php $category = get_the_category(); ?>
@@ -17,12 +17,13 @@
       <?php
       $paged = get_query_var('paged', 1); // ページ送り用記述
       $args = array(
-          'post_type' => 'スラッグ', 
-          'posts_per_page' => 9,
+          'category'  => '3',
+          'post_type' => 'post',
+          'posts_per_page' => 6,
           'paged' => $paged // ページ送り用記述
       );
       $wp_query = new WP_Query($args);
-      if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(3); ?>
+      if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); ?>
         <li>
           <a href ="<?php the_permalink(); ?>" class="tile-button">
             <img src ="<?php echo get_the_post_thumbnail_url(); ?>">
