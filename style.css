@@ -7,6 +7,14 @@ Version: 1.0
 Author: Masa
  */
 
+ body {
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+  }
+
+.list-style-none {
+  list-style: none;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -183,6 +191,7 @@ header h1 a {
   #photos h6 {
     padding-top: 30px;
     margin-bottom: 40px;
+    font-family: 'Great Vibes', cursive, sans-serif;
   }
 }
 
@@ -219,7 +228,6 @@ main h6 {
   text-align: center;
   margin: 0 0 60px;
   padding-top: 60px;
-  font-family: 'Courgette', cursive, sans-serif;
   font-size: 20px;
   color: rgb(82, 82, 82);
 }
@@ -257,7 +265,6 @@ main h6 {
 .tile-button .caption p {
   margin: 3px 0 3px;
   font-size: 1.2vw;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .tile-button .mask {
@@ -334,30 +341,34 @@ footer p {
 
 .blog-item {
   background-color: rgb(243, 243, 243);
+  width: auto;
+  height: 200px;
   display: flex;
-  justify-content: flex-start;
 }
 
-.blog-img {
-  width: 40%;
-  height: auto;
-  background-color: blue;
-  padding: 0;
+.blog-item img {
+  width: auto;
+  height: 80%;
+  margin: auto auto auto 10px;
 }
 
 .blog-title {
-  background-color: blueviolet;
+
 }
 
 .blog-time {
-  background-color: cornflowerblue;
+
+}
+
+.blog-section {
+  color: rgb(82, 82, 82);
+  font-weight: 500;
 }
 
 .no-item {
   text-align: center;
   color: rgb(230, 181, 69);
   font-size: 1.2rem;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* ここからsingle.phpのスタイルシート */
@@ -383,7 +394,6 @@ footer p {
   grid-row: span 2;
 }
 
-
 .single-page-section li {
   list-style: none;
 }
@@ -395,8 +405,6 @@ footer p {
 .photo-z-index  {
   z-index: 1;
 }
-
-
 
 .pagination {
   margin: 60px auto 60px;
@@ -442,3 +450,4 @@ footer p {
   background: #323232;
   color: #fff
 }
+

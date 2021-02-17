@@ -1,13 +1,14 @@
 <?php get_header(); ?>
   <main>
-    <?php if( have_posts()): while( have_posts()): the_post(); ?>
     <div class="single-page-data">
-      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      <p>撮影日: <?php echo get_post_meta($post->ID, '撮影日', true); ?></p>
+      <h2><?php the_title(); ?></h2>
+      <?php if(in_category('Photo')) : ?>
+        <br><h4><i class="fas fa-camera"></i> <?php echo get_post_meta($post->ID, '撮影日', true); ?></h4>
+      <?php else: ?>
+      <?php endif; ?>
     </div>
     <div class ="contents_area">
       <?php the_content(); ?>
     </div>
-    <?php endwhile; endif; ?>
   </main>
 <?php get_footer(); ?>

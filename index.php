@@ -17,7 +17,7 @@
       <?php
       $paged = get_query_var('paged', 1); // ページ送り用記述
       $args = array(
-          'category_name' => 'photo',
+          'category_name' => 'Photo',
           'post_type' => 'post',
           'posts_per_page' => 6,
           'paged' => $paged // ページ送り用記述
@@ -43,15 +43,15 @@
     </ul>
     <div class="pagination">
       <?php
-          $big = 9999999999;
-          $arg = array(
-              'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link ( $big ) ) ),
-          'format' => 'page/%#%/',
-          'current' => max(1, $paged),
-              'prev_text' => '<i class="fa fa-angle-left"></i>',
-              'next_text' => '<i class="fa fa-angle-right"></i>'
-          );
-          echo paginate_links($arg);
+        $big = 9999999999;
+        $arg = array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link ( $big ) ) ),
+        'format' => 'page/%#%/',
+        'current' => max(1, $paged),
+            'prev_text' => '<i class="fa fa-angle-left"></i>',
+            'next_text' => '<i class="fa fa-angle-right"></i>'
+        );
+        echo paginate_links($arg);
       ?>
     </div>
   </div>
