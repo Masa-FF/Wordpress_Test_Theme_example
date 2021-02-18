@@ -45,11 +45,11 @@
       <?php
         $big = 9999999999;
         $arg = array(
-            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link ( $big ) ) ),
-        'format' => 'page/%#%/',
-        'current' => max(1, $paged),
-            'prev_text' => '<i class="fa fa-angle-left"></i>',
-            'next_text' => '<i class="fa fa-angle-right"></i>'
+          'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link ( $big ) ) ),
+          'format' => 'page/%#%/',
+          'current' => max(1, $paged),
+          'prev_text' => '<i class="fa fa-angle-left"></i>',
+          'next_text' => '<i class="fa fa-angle-right"></i>'
         );
         echo paginate_links($arg);
       ?>
