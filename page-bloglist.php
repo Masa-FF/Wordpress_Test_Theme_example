@@ -10,17 +10,24 @@
     );
     $wp_query = new WP_Query($args);
   if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); ?>
-    <div class="blog-item">
-      
+    <a href="<?php the_permalink(); ?>" class="blog-item">
+      <div class="blog-img">
         <?php the_post_thumbnail('index_thumbnail'); ?>
-      
+      </div>
       <div class="blog-title">
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-      </div>
-      <div class="blog-time">
+        <h4><?php the_title(); ?></h4>
         <?php the_time('Y.m.d') ?>
+        <br>
+        <?php
+        if(mb_strlen($post->post_content, 'UTF-8')>25){
+	        $content= mb_substr($post->post_content, 0, 100, 'UTF-8');
+	        echo $content.'...';
+        }else{
+	        echo $post->post_content;
+        }
+        ?>
       </div>
-    </div>
+    </a>
   <?php endwhile; ?>
   <?php else: ?>
       <p class="no-item">申し訳ありません。まだ、投稿が無いようです。</p>

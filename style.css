@@ -341,24 +341,31 @@ footer p {
 }
 
 .blog-item {
+  margin-bottom: 15px;
   background-color: rgb(243, 243, 243);
   width: auto;
-  height: 200px;
+  height: auto;
   display: flex;
+  flex-wrap: nowrap;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #323232;
 }
 
-.blog-item img {
+.blog-img img {
   width: auto;
-  height: 80%;
-  margin: auto auto auto 10px;
+  height: 160px;
+  margin: 20px 0 20px 15px;
+  border-radius: 15px;
 }
 
 .blog-title {
+  margin: 15px 15px 15px 15px;
+  font-size: 1.2rem;
+ }
 
-}
-
-.blog-time {
-
+.blog-item h4 {
+  font-size: 1.4rem;
 }
 
 .blog-section {
@@ -370,6 +377,29 @@ footer p {
   text-align: center;
   color: rgb(230, 181, 69);
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .blog-main {
+    width: 97%;
+    margin: 0 auto;
+  }
+  .blog-item {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog-img img {
+    width: auto;
+    height: 140px;
+    margin: 10px auto 2px 10px;
+    border-radius: 10px;
+  }
+  .blog-title {
+    margin: 0 4px 4px 10px;
+    font-size: 0.7rem;
+   }
 }
 
 /* ここからsingle.phpのスタイルシート */
