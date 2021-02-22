@@ -336,7 +336,7 @@ footer p {
 /* ここからblogのスタイルシート */
 
 .blog-main {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -388,17 +388,23 @@ footer p {
     width: auto;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .blog-img img {
     width: auto;
     height: 140px;
-    margin: 10px auto 2px 10px;
+    /* padding: 5px auto 2px 5px; */
     border-radius: 10px;
   }
+
+  .blog-title h4 {
+    font-size: 0.9rem;
+    padding-top: 15px;
+  }
+
   .blog-title {
     margin: 0 4px 4px 10px;
-    font-size: 0.7rem;
+    font-size: 0.4rem;
    }
 }
 
@@ -482,3 +488,28 @@ footer p {
   color: #fff
 }
 
+/* 写真詳細ページ */
+.sns-area {
+  display: flex;
+}
+
+.sns-area a {
+  width: 5%;
+  margin: 30px 10px 30px;
+}
+
+.sns-area a img {
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .sns-area {
+    justify-content: flex-end;
+    padding: 0 10px 0;
+  }
+
+  .sns-area a {
+    width: 20%;
+    margin: 30px 10px 30px;
+  }
+}
